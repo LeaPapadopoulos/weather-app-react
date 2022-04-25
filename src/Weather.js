@@ -7,10 +7,7 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
 
-  let date = new Date();
-
-  let weekShortDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
+  
   function handleResponse(response) {
     setWeatherData({
       ready: true,
