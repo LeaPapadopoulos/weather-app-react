@@ -1,9 +1,5 @@
-
-
-.Weather {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px; 
- 
+h1 {
+  color: red;
 }
 
 .container {
@@ -25,10 +21,17 @@
   left: 0;
   width: 100%;
 }
+
 .align-bottom-text {
   position: relative;
   top: 150px;
 }
+
+.celsius-font {
+    font-size: 20px;
+    color:black
+}
+
 #selected-city {
   text-transform: capitalize;
 }
