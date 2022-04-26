@@ -18,7 +18,7 @@ export default function Weather(props) {
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].main,
-      icon: response.data.weather[0].icon,
+      icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       wind: Math.round(response.data.wind.speed),
       city: response.data.name,
     });
@@ -59,7 +59,7 @@ export default function Weather(props) {
               <span className="celsius-font">
                 <span id="celsius-link"> °C</span>
               </span>
-              <img src="" alt="" id="daily-icon" className="float-right" />
+              <img src={weatherData.icon} alt="" id="daily-icon" className="float-right" />
             </h1>
             <div className="float-right">
               <span>
